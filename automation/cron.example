@@ -1,0 +1,8 @@
+# cpns-apply — pengingat latihan CPNS harian (19:00)
+# Pasang dengan: crontab -e, lalu tempel baris ini (sesuaikan path ke folder skill).
+0 19 * * * /bin/bash /path/ke/cpns-apply-skill/automation/run-daily.sh >> /tmp/cpns-apply.log 2>&1
+
+# cpns-apply — cek pengumuman CPNS rutin (setiap pagi 07:00)
+# Hanya melaporkan kalau ada pengumuman baru/berubah di portal resmi.
+# Pasang dengan: crontab -e, lalu tempel baris ini (sesuaikan path ke folder skill).
+0 7 * * * /bin/bash /path/ke/cpns-apply-skill/automation/cek-pengumuman.sh >> /tmp/cpns-apply.log 2>&1
