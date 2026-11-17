@@ -12,24 +12,22 @@ npx skills add rfamax/cpns-apply-skill
 
 ## Cara gratis (tanpa langganan)
 
-Skill ini gratis, tapi butuh AI agent buat jalanin. Yang 100% gratis:
+Skill ini gratis, tapi butuh AI agent buat jalanin. Pilih sesuai device:
 
-**1. Gemini CLI (paling lengkap, tetap gratis)**
+**1. HP → aplikasi Gemini (paling gampang, tanpa install)**
+- Buka aplikasi Gemini di HP, login pakai akun Google.
+- Skill dibuat sekali lewat web (gemini.google.com): download repo ini (tombol Code → Download ZIP), buat Skill baru, upload file .zip-nya. Habis itu bisa dipakai di HP.
+- Catatan: otomasi (pengingat latihan harian, cek pengumuman rutin) tidak jalan di aplikasi — itu butuh Gemini CLI di PC/laptop.
+
+**2. PC/laptop → Gemini CLI (paling lengkap, tetap gratis)**
 - Install: `npm install -g @google/gemini-cli`, lalu jalankan `gemini` dan login pakai akun Google.
 - Install skill: `npx skills add rfamax/cpns-apply-skill -a gemini-cli`
-- Gratis 1.000 request/hari pakai akun Google — cukup buat latihan dan simulasi harian. Semua fitur skill jalan, termasuk pengingat latihan dan cek pengumuman (dijalankan lewat cron di komputermu sendiri).
+- Catatan: gratis 1.000 request/hari — cukup buat latihan dan simulasi harian. Semua fitur skill jalan, termasuk pengingat dan cek pengumuman.
 
-**2. Aplikasi Gemini di web/HP (paling gampang, tanpa install)**
-- Buka aplikasi Gemini, buat Skill baru, lalu upload file `SKILL.md` dari repo ini (atau folder skill-nya sebagai .zip).
-- Gratis pakai akun Google. Cocok buat latihan soal, simulasi, dan strategi.
-- Catatan: otomasi (pengingat harian, cek pengumuman rutin) tidak jalan di aplikasi — itu butuh Gemini CLI di komputer.
-
-**3. OpenCode (alternatif gratis)**
+**3. Cadangan → OpenCode (alternatif gratis)**
 - Gratis dan open source, lihat https://opencode.ai
 - Install skill: `npx skills add rfamax/cpns-apply-skill -a opencode`
-- Ada model gratis bawaan (tanpa akun/API key), tapi daftar model gratisnya bisa berubah sewaktu-waktu.
-
-Claude Code juga bisa (`npx skills add rfamax/cpns-apply-skill`), tapi butuh paket Pro ($20/bulan) buat pemakaian serius.
+- Catatan: ada model gratis bawaan (tanpa akun/API key), tapi daftar model gratisnya bisa berubah sewaktu-waktu.
 
 ## Cara pakai
 
